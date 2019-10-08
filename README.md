@@ -21,8 +21,9 @@ Caution!
 ** Your pendrive needs to be named "BashBunny".
 
 ```
-rm -rf ducked/.git ducked/README.md ducked/LICENSE.md
+rm -rf ducked/.git
 cp -R ducked/* $(lsblk -o mountpoint | grep 'BashBunny')
+mv -t $(lsblk -o mountpoint | grep 'BashBunny')/payloads/ ducked/README.md ducked/LICENSE.md
 rm -rf ducked
 sync; umount $(lsblk -o mountpoint | grep 'BashBunny')
 ```
@@ -35,7 +36,7 @@ Stores loot from the Windows target!
 * Procdump LSASS minidump (load mimikatz.exe and use sekurlsa:minidump lsass.dmp)
 * Wifi Credential Ripper
 
-Fire ![mimikatz](https://github.com/gentilkiwi/mimikatz/releases) with
+Fire up ![Mimikatz](https://github.com/gentilkiwi/mimikatz/releases)
 ```
 sekurlsa:minidump lsass.dmp
 ```
@@ -59,13 +60,13 @@ Submit issues, add feature requests or pull requests.
 
 ## ToDo
 
-* remove security events once compromised and hide all traces
-* execute everything in memory with cscript
-* check WS-ResetBypass again
-* obfuscate payloads with cradle crafter
+* Remove security events once compromised and hide all traces
+* Execute everything in memory with cscript
+* Check WS-ResetBypass again
+* Obfuscate payloads with cradle crafter
 
 ## License
 
 This project is licensed under WTFWPL - see the ![License](LICENSE.md) file for more details.
 
-Thanks to Darren Kitchen from HAK5 providing the device.
+Thanks to Darren Kitchen from HAK5 providing this awesome device.
