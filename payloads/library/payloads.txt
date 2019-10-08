@@ -1,0 +1,2 @@
+Update this library with the latest payload set from the Bash Bunny community and learn more about creating and publishing your own payloads at https://github.com/Hak5/bashbunny-payloads.
+
