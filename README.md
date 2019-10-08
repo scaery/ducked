@@ -1,5 +1,7 @@
 # Ducked
 
+![Bash Bunny](https://www.hak5.org/wp-content/uploads/2017/10/icon3-169x169.png)
+
 Ducked is a customized Rubberducky Payload for BashBunny Firmware 1.6_305
 
 * Redteam alike!
@@ -69,4 +71,4 @@ Submit issues, add feature requests or pull requests.
 
 This project is licensed under WTFWPL - see the ![License](LICENSE.md) file for more details.
 
-Thanks to Darren Kitchen from HAK5 providing this awesome device.
+Thanks to Darren Kitchen from Hak5 providing this awesome device.
