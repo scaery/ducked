@@ -47,6 +47,9 @@ LEFT
 DELAY 1000
 ENTER
 DELAY 1000
+STRING $usb = (gwmi win32_volume -f 'label="BASHBUNNY"').Name
+ENTER
+DELAY 100
 STRING function eject {$driveEject = New-Object -comObject Shell.Application;$driveEject.Namespace(17).ParseName("$usb").InvokeVerb("Eject")}
 ENTER
 DELAY 1000
